@@ -204,14 +204,21 @@ li {
   margin: 0 auto;
 }
 
+.hero-name {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  justify-content: center;
+}
+
 .hero-headshot {
-  width: 120px;
-  height: 120px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 18px;
-  border: 3px solid rgba(255, 255, 255, 1);
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(255, 255, 255, 1);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
 }
 
 .hero h1 {
