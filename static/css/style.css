@@ -196,6 +196,16 @@ li {
   margin: 0 auto;
 }
 
+.hero-headshot {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 18px;
+  border: 3px solid rgba(255, 255, 255, 1);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
 .hero h1 {
   color: rgba(31, 31, 31, 1);
   margin-bottom: 12px;
