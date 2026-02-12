@@ -204,11 +204,15 @@ li {
   margin: 0 auto;
 }
 
-.hero-name {
+.hero-intro {
   display: inline-flex;
   align-items: center;
-  gap: 14px;
+  gap: 20px;
   justify-content: center;
+}
+
+.hero-text {
+  text-align: center;
 }
 
 .hero-headshot {
