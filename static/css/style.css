@@ -212,8 +212,8 @@ li {
 }
 
 .hero-headshot {
-  width: 48px;
-  height: 48px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid rgba(255, 255, 255, 1);
