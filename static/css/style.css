@@ -133,6 +133,14 @@ li {
   text-transform: uppercase;
   letter-spacing: 2px;
   color: rgba(31, 31, 31, 1);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-logo {
+  width: 22px;
+  height: 22px;
 }
 
 .navbar-brand:hover {
