@@ -484,6 +484,10 @@ li {
   margin: 0 auto;
 }
 
+.contact-content h2::after {
+  display: none;
+}
+
 .contact-content p {
   font-size: 11pt;
   color: rgba(95, 125, 140, 1);
