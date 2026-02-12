@@ -207,17 +207,17 @@ li {
 .hero-intro {
   display: inline-flex;
   align-items: center;
-  gap: 20px;
+  gap: 28px;
   justify-content: center;
 }
 
-.hero-text {
+.hero-content {
   text-align: center;
 }
 
 .hero-headshot {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid rgba(255, 255, 255, 1);
