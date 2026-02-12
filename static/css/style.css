@@ -1,0 +1,616 @@
+/* ============================================
+   Dr. Alessandro Morari — Personal Site
+   Matching Google Sites original design
+   Colors: #607D8B (slate blue), #1F1F1F (near-black), #FFF
+   Typography: Oswald (headings) + Droid Sans (body)
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&family=Droid+Sans:wght@400;700&display=swap');
+
+/* --- Reset & Base --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 72px;
+}
+
+body {
+  font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 15pt;
+  line-height: 1.6;
+  color: rgba(31, 31, 31, 1);
+  background-color: rgba(255, 255, 255, 1);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: rgba(96, 125, 139, 1);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: rgba(69, 90, 100, 1);
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* --- Typography (matching Google Sites) --- */
+h1, h2, h3, h4, h5 {
+  font-family: 'Oswald', sans-serif;
+  color: rgba(31, 31, 31, 1);
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 60pt;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 33pt;
+  line-height: 1.23;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 28px;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 22pt;
+  line-height: 1.26;
+  margin-bottom: 15px;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 17pt;
+  line-height: 1.42;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 15px;
+  font-size: 15pt;
+  line-height: 1.6;
+}
+
+ul {
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+/* --- Navbar (new improvement — sticky nav) --- */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.97);
+  border-bottom: 1px solid rgba(204, 204, 204, 1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: box-shadow 0.3s ease;
+}
+
+.navbar.scrolled {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.navbar-brand {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 16pt;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgba(31, 31, 31, 1);
+}
+
+.navbar-brand:hover {
+  color: rgba(96, 125, 139, 1);
+  text-decoration: none;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+}
+
+.navbar-links a {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 12pt;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: rgba(95, 125, 140, 1);
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.navbar-links a:hover,
+.navbar-links a.active {
+  color: rgba(96, 125, 139, 1);
+  border-bottom-color: rgba(96, 125, 139, 1);
+  text-decoration: none;
+}
+
+/* Mobile menu toggle */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: rgba(31, 31, 31, 1);
+  margin: 5px 0;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+/* --- Hero / Title Section --- */
+.hero {
+  margin-top: 64px;
+  background: rgba(244, 244, 244, 1);
+  text-align: center;
+  padding: 56px 36px 48px;
+}
+
+.hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  color: rgba(31, 31, 31, 1);
+  margin-bottom: 12px;
+}
+
+.hero .role {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 24pt;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: rgba(96, 125, 139, 1);
+  margin-bottom: 8px;
+}
+
+.hero .tagline {
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 15pt;
+  color: rgba(95, 125, 140, 1);
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+
+/* Profile links row in hero */
+.hero-links {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.hero-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 18px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 11pt;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: rgba(96, 125, 139, 1);
+  border: 1px solid rgba(96, 125, 139, 0.4);
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.hero-links a:hover {
+  background: rgba(96, 125, 139, 0.1);
+  text-decoration: none;
+}
+
+/* --- Sections --- */
+.section {
+  padding: 56px 36px;
+}
+
+.section-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section-alt {
+  background: rgba(247, 247, 247, 1);
+}
+
+.section h2 {
+  color: rgba(31, 31, 31, 1);
+}
+
+/* Divider line under section headings */
+.section h2::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: rgba(96, 125, 139, 1);
+  margin-top: 12px;
+}
+
+/* --- About Section --- */
+.about-content {
+  font-size: 15pt;
+  line-height: 1.6;
+  color: rgba(33, 33, 33, 1);
+}
+
+/* --- Education --- */
+.education-list {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.education-list li {
+  font-size: 15pt;
+  margin-bottom: 12px;
+  color: rgba(33, 33, 33, 1);
+}
+
+.education-list li strong {
+  font-weight: 700;
+}
+
+/* --- Awards --- */
+.awards-list {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.awards-list li {
+  font-size: 15pt;
+  margin-bottom: 12px;
+  color: rgba(33, 33, 33, 1);
+}
+
+/* --- Press / In the Press --- */
+.press-category {
+  margin-bottom: 36px;
+}
+
+.press-category h3 {
+  color: rgba(31, 31, 31, 1);
+  margin-bottom: 15px;
+}
+
+.press-category ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.press-category li {
+  font-size: 15pt;
+  margin-bottom: 10px;
+}
+
+/* --- Publications / Selected Papers --- */
+.pub-category {
+  margin-bottom: 36px;
+}
+
+.pub-category h3 {
+  color: rgba(31, 31, 31, 1);
+  margin-bottom: 15px;
+}
+
+.pub-list {
+  list-style: decimal;
+  padding-left: 20px;
+}
+
+.pub-list li {
+  font-size: 14pt;
+  margin-bottom: 16px;
+  line-height: 1.6;
+  color: rgba(33, 33, 33, 1);
+}
+
+.pub-list li .pub-title {
+  font-weight: 700;
+}
+
+.pub-list li .pub-venue {
+  font-style: italic;
+  color: rgba(96, 125, 139, 1);
+}
+
+.pub-list li a {
+  font-size: 12pt;
+}
+
+/* --- Presentations --- */
+.presentations-list {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.presentations-list li {
+  font-size: 15pt;
+  margin-bottom: 10px;
+}
+
+/* --- Featured Work (NEW section) --- */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+  margin-top: 20px;
+}
+
+.project-card {
+  border: 1px solid rgba(204, 204, 204, 1);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: box-shadow 0.2s, transform 0.2s;
+  background: rgba(255, 255, 255, 1);
+}
+
+.project-card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.project-card .project-img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  background: linear-gradient(135deg, rgba(96, 125, 139, 1) 0%, rgba(69, 90, 100, 1) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: 'Oswald', sans-serif;
+  font-size: 14pt;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.project-card .project-body {
+  padding: 20px;
+}
+
+.project-card h4 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 16pt;
+  margin-bottom: 8px;
+}
+
+.project-card p {
+  font-size: 13pt;
+  color: rgba(95, 125, 140, 1);
+  margin-bottom: 12px;
+}
+
+.project-card .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.project-card .tag {
+  font-size: 9pt;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 3px 10px;
+  background: rgba(244, 244, 244, 1);
+  color: rgba(96, 125, 139, 1);
+  border-radius: 3px;
+}
+
+/* --- Contact Section (NEW) --- */
+.contact-content {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-content p {
+  font-size: 15pt;
+  color: rgba(95, 125, 140, 1);
+  margin-bottom: 28px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 13pt;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border: 2px solid rgba(96, 125, 139, 1);
+  border-radius: 4px;
+  color: rgba(96, 125, 139, 1);
+  transition: background 0.2s, color 0.2s;
+}
+
+.contact-btn:hover {
+  background: rgba(96, 125, 139, 1);
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+
+.contact-btn.primary {
+  background: rgba(96, 125, 139, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.contact-btn.primary:hover {
+  background: rgba(69, 90, 100, 1);
+  border-color: rgba(69, 90, 100, 1);
+}
+
+/* --- Links Section --- */
+.links-list {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.links-list li {
+  font-size: 15pt;
+  margin-bottom: 10px;
+}
+
+/* --- Footer --- */
+.footer {
+  background: rgba(33, 33, 33, 1);
+  color: rgba(255, 255, 255, 0.6);
+  padding: 28px 36px;
+  text-align: center;
+  font-size: 12pt;
+}
+
+.footer a {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  h1 { font-size: 33pt; }
+  h2 { font-size: 26pt; }
+  h3 { font-size: 18pt; }
+  p, li { font-size: 13pt; }
+
+  .hero {
+    padding: 36px 20px 32px;
+  }
+
+  .hero .role {
+    font-size: 17pt;
+  }
+
+  .section {
+    padding: 36px 20px;
+  }
+
+  .navbar-inner {
+    padding: 0 20px;
+  }
+
+  .navbar-links {
+    display: none;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 1);
+    flex-direction: column;
+    padding: 15px 20px;
+    gap: 0;
+    border-bottom: 1px solid rgba(204, 204, 204, 1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .navbar-links li {
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(244, 244, 244, 1);
+  }
+
+  .navbar-links li:last-child {
+    border-bottom: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .contact-links {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 27pt; }
+  h2 { font-size: 22pt; }
+
+  .hero .role {
+    font-size: 15pt;
+    letter-spacing: 2px;
+  }
+
+  .hero-links {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* --- Screen reader only --- */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}

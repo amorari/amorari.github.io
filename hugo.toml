@@ -1,0 +1,52 @@
+baseURL = "https://alessandromorari.github.io/"
+languageCode = "en-us"
+title = "Dr. Alessandro Morari — AI Systems Leader"
+
+[params]
+  description = "AI Systems Leader at NVIDIA, building AI infrastructure from silicon to software. Former IBM Research, contributor to Summit & Sierra supercomputers."
+  author = "Dr. Alessandro Morari"
+  tagline = "Building AI Systems from Silicon to Software"
+  role = "AI Systems Leader @NVIDIA"
+  email = "morari024@gmail.com"
+  linkedin = "https://www.linkedin.com/in/alessandro-morari-b9b71a13/"
+  scholar = "https://scholar.google.com/citations?user=v1_S5_MAAAAJ&hl=en"
+  dblp = "https://dblp.org/pid/82/10082.html"
+  arxiv = "https://arxiv.org/search/cs?searchtype=author&query=Morari%2C+A"
+  researchgate = "https://www.researchgate.net/profile/Alessandro-Morari"
+  paperswithcode = "https://paperswithcode.com/search?q=author%3AAlessandro+Morari"
+
+  # Open Graph / Social
+  [params.og]
+    image = "/images/og-banner.jpg"
+    type = "website"
+
+[menu]
+  [[menu.main]]
+    name = "About"
+    url = "#about"
+    weight = 1
+  [[menu.main]]
+    name = "Experience"
+    url = "#experience"
+    weight = 2
+  [[menu.main]]
+    name = "Awards"
+    url = "#awards"
+    weight = 3
+  [[menu.main]]
+    name = "Publications"
+    url = "#publications"
+    weight = 4
+  [[menu.main]]
+    name = "Press"
+    url = "#press"
+    weight = 5
+  [[menu.main]]
+    name = "Contact"
+    url = "#contact"
+    weight = 6
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
