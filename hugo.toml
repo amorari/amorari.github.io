@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "Dr. Alessandro Morari — AI Systems Leader"
 
 [params]
-  description = "AI Systems Leader at NVIDIA, building AI systems across the full software stack. Former IBM Research, led Watson Code Assistant and contributed to Summit & Sierra supercomputers."
+  description = "I lead AI teams from infrastructure to strategy. Shipped production systems at NVIDIA, IBM Research, and the Department of Energy's national laboratories."
   author = "Dr. Alessandro Morari"
   tagline = "Building AI Systems from Infrastructure to Product"
   role = "AI Systems Leader @NVIDIA"
