@@ -15,6 +15,7 @@ title = "Dr. Alessandro Morari — AI Systems Leader"
   arxiv = "https://arxiv.org/search/cs?searchtype=author&query=Morari%2C+A"
   researchgate = "https://www.researchgate.net/profile/Alessandro-Morari"
   paperswithcode = "https://paperswithcode.com/search?q=author%3AAlessandro+Morari"
+  substack = "https://aimaximalism.substack.com"
 
   # Open Graph / Social
   [params.og]
@@ -39,13 +40,17 @@ title = "Dr. Alessandro Morari — AI Systems Leader"
     url = "#publications"
     weight = 4
   [[menu.main]]
+    name = "Writing"
+    url = "#writing"
+    weight = 5
+  [[menu.main]]
     name = "Press"
     url = "#press"
-    weight = 5
+    weight = 6
   [[menu.main]]
     name = "Contact"
     url = "#contact"
-    weight = 6
+    weight = 7
 
 [markup]
   [markup.goldmark]

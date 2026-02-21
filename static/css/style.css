@@ -475,6 +475,69 @@ li {
   border-radius: 3px;
 }
 
+/* --- Writing Section --- */
+.writing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+  margin-top: 20px;
+}
+
+.writing-card {
+  border: 1px solid rgba(204, 204, 204, 1);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: box-shadow 0.2s, transform 0.2s;
+  background: rgba(255, 255, 255, 1);
+  display: block;
+  color: inherit;
+}
+
+.writing-card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+  text-decoration: none;
+  color: inherit;
+}
+
+.writing-card-body {
+  padding: 16px;
+}
+
+.writing-date {
+  font-family: 'Oswald', sans-serif;
+  font-size: 9pt;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(96, 125, 139, 1);
+  margin-bottom: 6px;
+}
+
+.writing-card h4 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 12pt;
+  margin-bottom: 6px;
+}
+
+.writing-card p {
+  font-size: 10pt;
+  color: rgba(95, 125, 140, 1);
+  margin-bottom: 10px;
+}
+
+.writing-link {
+  font-family: 'Oswald', sans-serif;
+  font-size: 9pt;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(96, 125, 139, 1);
+}
+
+.writing-card:hover .writing-link {
+  color: rgba(69, 90, 100, 1);
+}
+
 /* --- Contact Section (NEW) --- */
 .contact-content {
   text-align: center;

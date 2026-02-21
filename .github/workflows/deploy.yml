@@ -3,6 +3,8 @@ name: Deploy Hugo to GitHub Pages
 on:
   push:
     branches: [main]
+  schedule:
+    - cron: '0 8 * * *'
   workflow_dispatch:
 
 permissions:
@@ -38,6 +40,12 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+
+      - name: Fetch Substack posts
+        run: |
+          RAW=$(curl -sfSL "https://aimaximalism.substack.com/api/v1/posts?limit=5") \
+          && echo "{\"posts\":$RAW}" > data/substack.json \
+          || echo "Using committed data/substack.json fallback"
 
       - name: Build with Hugo
         env:
