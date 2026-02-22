@@ -466,6 +466,13 @@ li {
   font-weight: 400;
 }
 
+/* Publications intro */
+.pub-full-list {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin-bottom: 28px;
+}
+
 /* --- Publications --- */
 .pub-category {
   margin-bottom: 36px;
