@@ -247,22 +247,28 @@
 <section id="writing" class="section section-alt">
   <div class="section-inner">
     <h2>Writing</h2>
-    {{ with .Site.Data.substack.posts }}
-      <div class="writing-grid">
-        {{ range . }}
-          <a href="{{ .canonical_url }}" target="_blank" rel="noopener" class="writing-card">
-            <div class="writing-card-body">
-              <div class="writing-date">{{ .post_date | time.AsTime | time.Format "Jan 2, 2006" }}</div>
-              <h4>{{ .title }}</h4>
-              {{ with .description }}
-                <p>{{ . | plainify | truncate 150 }}</p>
-              {{ end }}
-              <span class="writing-link">Read on Substack &rarr;</span>
-            </div>
-          </a>
-        {{ end }}
-      </div>
-    {{ end }}
+    <div class="writing-grid">
+      <a href="https://www.linkedin.com/pulse/physics-ai-systems-four-fundamental-laws-alessandro-morari-uijbe/" target="_blank" rel="noopener" class="writing-card">
+        <div class="writing-card-body">
+          <div class="writing-date">Feb 24, 2026</div>
+          <h4>The Physics of AI Systems: Four Fundamental Laws</h4>
+          <p>AI systems have their own physics. Not metaphorical: actual constraints rooted in mathematics and the physical properties of silicon, light, and electrons.</p>
+          <span class="writing-link">Read on LinkedIn &rarr;</span>
+        </div>
+      </a>
+      {{ range .Site.Data.substack.posts }}
+        <a href="{{ .canonical_url }}" target="_blank" rel="noopener" class="writing-card">
+          <div class="writing-card-body">
+            <div class="writing-date">{{ .post_date | time.AsTime | time.Format "Jan 2, 2006" }}</div>
+            <h4>{{ .title }}</h4>
+            {{ with .description }}
+              <p>{{ . | plainify | truncate 150 }}</p>
+            {{ end }}
+            <span class="writing-link">Read on Substack &rarr;</span>
+          </div>
+        </a>
+      {{ end }}
+    </div>
   </div>
 </section>
 
@@ -279,7 +285,6 @@
         </a>
         <a href="{{ .Site.Params.twitter }}" target="_blank" rel="noopener" class="contact-btn">
           <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-          X
         </a>
       </div>
     </div>
