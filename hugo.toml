@@ -3,10 +3,10 @@ languageCode = "en-us"
 title = "Dr. Alessandro Morari — AI Systems Leader"
 
 [params]
-  description = "I lead AI teams from infrastructure to strategy. Shipped production systems at NVIDIA, IBM Research, and the Department of Energy's national laboratories."
+  description = "Leading AI R&D at a stealth AI-for-science startup. Previously at NVIDIA, IBM Research, and the Department of Energy's national laboratories."
   author = "Dr. Alessandro Morari"
   tagline = "Building AI Systems from Infrastructure to Product"
-  role = "AI Systems Leader @NVIDIA"
+  role = "AI Systems Leader"
   twitter = "https://x.com/AleMorari"
   github = "https://github.com/amorari"
   linkedin = "https://www.linkedin.com/in/alessandro-morari-b9b71a13/"
