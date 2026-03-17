@@ -3,9 +3,9 @@ languageCode = "en-us"
 title = "Dr. Alessandro Morari — AI Systems Leader"
 
 [params]
-  description = "Leading AI R&D at a stealth AI-for-science startup. Previously at NVIDIA, IBM Research, and the Department of Energy's national laboratories."
+  description = "Leading AI R&D at a stealth AI-for-physics startup. Previously at NVIDIA, IBM Research, and the Department of Energy's national laboratories."
   author = "Dr. Alessandro Morari"
-  tagline = "Stealth AI-for-Science Startup"
+  tagline = "Stealth AI-for-Physics Startup"
   role = "AI Systems Leader"
   twitter = "https://x.com/AleMorari"
   github = "https://github.com/amorari"
