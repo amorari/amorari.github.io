@@ -1,12 +1,12 @@
 baseURL = "https://alessandromorari.com/"
 languageCode = "en-us"
-title = "Dr. Alessandro Morari — AI Systems Leader"
+title = "Dr. Alessandro Morari — CTO"
 
 [params]
-  description = "Leading AI R&D at a stealth AI-for-physics startup. Previously at NVIDIA, IBM Research, and the Department of Energy's national laboratories."
+  description = "CTO at a stealth AI-for-physics startup. Previously at NVIDIA, IBM Research, and the Department of Energy's national laboratories."
   author = "Dr. Alessandro Morari"
   tagline = "Stealth AI-for-Physics Startup"
-  role = "AI Systems Leader"
+  role = "CTO"
   twitter = "https://x.com/AleMorari"
   github = "https://github.com/amorari"
   linkedin = "https://www.linkedin.com/in/alessandro-morari-b9b71a13/"

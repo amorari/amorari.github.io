@@ -1,3 +1,3 @@
 ---
-title: "Dr. Alessandro Morari — AI Systems Leader"
+title: "Dr. Alessandro Morari — CTO"
 ---
