@@ -446,6 +446,13 @@ li {
   border-bottom: 1px solid var(--border);
 }
 
+.press-blurb {
+  font-size: 15px;
+  color: var(--text-light);
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+
 .press-category ul {
   list-style: none;
   padding-left: 0;
