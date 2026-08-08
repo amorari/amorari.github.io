@@ -43,7 +43,7 @@ jobs:
 
       - name: Fetch Substack posts
         run: |
-          RAW=$(curl -sfSL "https://aimaximalism.substack.com/api/v1/posts?limit=5") \
+          RAW=$(curl -sfSL "https://alessandromorari.substack.com/api/v1/posts?limit=12") \
           && echo "{\"posts\":$RAW}" > data/substack.json \
           || echo "Using committed data/substack.json fallback"
 

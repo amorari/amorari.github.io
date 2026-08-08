@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "Dr. Alessandro Morari — CTO"
 
 [params]
-  description = "CTO at a Physical Superintelligence. Previously at NVIDIA, IBM Research, and the Department of Energy's national laboratories."
+  description = "CTO at Physical Superintelligence. Previously at NVIDIA, IBM Research, and the Department of Energy's national laboratories."
   author = "Dr. Alessandro Morari"
   role = "CTO @ AI for Physics Startup"
   twitter = "https://x.com/AleMorari"
@@ -14,7 +14,7 @@ title = "Dr. Alessandro Morari — CTO"
   arxiv = "https://arxiv.org/search/cs?searchtype=author&query=Morari%2C+A"
   researchgate = "https://www.researchgate.net/profile/Alessandro-Morari"
   paperswithcode = "https://paperswithcode.com/search?q=author%3AAlessandro+Morari"
-  substack = "https://aimaximalism.substack.com"
+  substack = "https://alessandromorari.substack.com"
 
   # Open Graph / Social
   [params.og]
