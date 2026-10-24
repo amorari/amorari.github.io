@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}: {{ .Site.Title }}{{ end }}</title>
   <meta name="description" content="{{ .Site.Params.description }}">
   <meta name="author" content="{{ .Site.Params.author }}">
 
@@ -12,14 +12,14 @@
   <meta property="og:description" content="{{ .Site.Params.description }}">
   <meta property="og:type" content="{{ .Site.Params.og.type | default "website" }}">
   <meta property="og:url" content="{{ .Permalink }}">
-  <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.og.image }}">
+  <meta property="og:image" content="{{ .Site.Params.og.image | absURL }}">
   <meta property="og:site_name" content="{{ .Site.Params.author }}">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
   <meta name="twitter:description" content="{{ .Site.Params.description }}">
-  <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ .Site.Params.og.image }}">
+  <meta name="twitter:image" content="{{ .Site.Params.og.image | absURL }}">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">

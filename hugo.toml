@@ -1,55 +1,63 @@
 baseURL = "https://alessandromorari.com/"
 languageCode = "en-us"
-title = "Dr. Alessandro Morari — CTO"
+title = "Alessandro Morari, PhD: CTO at Physical Superintelligence"
 
 [params]
-  description = "CTO at Physical Superintelligence. Previously at NVIDIA, IBM Research, and the Department of Energy's national laboratories."
+  description = "Chief Technology Officer at Physical Superintelligence, building and leading the company's research and engineering organization across physics, AI research, and engineering. Previously NVIDIA, IBM Research, DOE national laboratories."
   author = "Dr. Alessandro Morari"
-  role = "CTO @ AI for Physics Startup"
+  role = "Chief Technology Officer, Physical Superintelligence"
+  tagline = "Building and leading PSI's research and engineering organization across physics, AI research, and engineering."
   twitter = "https://x.com/AleMorari"
   github = "https://github.com/amorari"
-  linkedin = "https://www.linkedin.com/in/alessandro-morari-b9b71a13/"
+  linkedin = "https://www.linkedin.com/in/alessandro-morari/"
   scholar = "https://scholar.google.com/citations?user=v1_S5_MAAAAJ&hl=en"
   dblp = "https://dblp.org/pid/82/10082.html"
   arxiv = "https://arxiv.org/search/cs?searchtype=author&query=Morari%2C+A"
   researchgate = "https://www.researchgate.net/profile/Alessandro-Morari"
   paperswithcode = "https://paperswithcode.com/search?q=author%3AAlessandro+Morari"
   substack = "https://alessandromorari.substack.com"
+  psi = "https://psi.inc"
+  psi_jobs = "https://psi.inc/join"
+  psi_partnerships = "partnerships@psi.inc"
 
   # Open Graph / Social
   [params.og]
-    image = "/images/og-banner.jpg"
+    image = "/images/headshot.jpg"
     type = "website"
 
 [menu]
   [[menu.main]]
-    name = "About"
-    url = "#about"
+    name = "Now"
+    url = "#now"
     weight = 1
   [[menu.main]]
-    name = "Experience"
-    url = "#experience"
+    name = "Before PSI"
+    url = "#about"
     weight = 2
+  [[menu.main]]
+    name = "Work"
+    url = "#experience"
+    weight = 3
   [[menu.main]]
     name = "Awards"
     url = "#awards"
-    weight = 3
+    weight = 4
   [[menu.main]]
     name = "Press"
     url = "#press"
-    weight = 4
+    weight = 5
   [[menu.main]]
     name = "Publications"
     url = "#publications"
-    weight = 5
+    weight = 6
   [[menu.main]]
     name = "Writing"
     url = "#writing"
-    weight = 6
+    weight = 7
   [[menu.main]]
     name = "Contact"
     url = "#contact"
-    weight = 7
+    weight = 8
 
 [markup]
   [markup.goldmark]

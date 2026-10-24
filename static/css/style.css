@@ -619,6 +619,10 @@ li {
   background: linear-gradient(135deg, #2a2a2a 0%, #555555 100%);
 }
 
+.project-card:nth-child(4) .project-img {
+  background: linear-gradient(135deg, var(--accent-hover) 0%, var(--highlight) 100%);
+}
+
 .project-card .project-body {
   padding: 20px;
 }
@@ -656,6 +660,18 @@ li {
 }
 
 /* --- Writing Section --- */
+.writing-subhead {
+  color: var(--text);
+  margin-top: 36px;
+  margin-bottom: 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.writing-subhead:first-of-type {
+  margin-top: 0;
+}
+
 .writing-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -742,7 +758,24 @@ li {
 
 .contact-content p {
   color: var(--text-secondary);
+  margin-bottom: 10px;
+}
+
+.contact-content p:last-of-type {
   margin-bottom: 28px;
+}
+
+.contact-content p a {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+/* --- Now Section --- */
+.now-links {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 28px;
 }
 
 .contact-links {

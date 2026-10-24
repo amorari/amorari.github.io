@@ -1,3 +1,3 @@
 ---
-title: "Dr. Alessandro Morari — CTO"
+title: "Alessandro Morari, PhD: CTO at Physical Superintelligence"
 ---
