@@ -6,7 +6,7 @@
     <div class="hero-intro">
       <div class="hero-content">
         <h1>Alessandro Morari, Ph.D.</h1>
-        <div class="role">CTO @ Physical Superintelligence</div>
+        <div class="role">{{ .Site.Params.role }}</div>
         <div class="tagline">{{ .Site.Params.tagline }}</div>
         <div class="hero-links">
       <a href="{{ .Site.Params.linkedin }}" target="_blank" rel="noopener" title="LinkedIn">
@@ -40,26 +40,45 @@
   </div>
 </section>
 
-<!-- ========== ABOUT ========== -->
-<section id="about" class="section">
+<!-- ========== NOW ========== -->
+<section id="now" class="section">
   <div class="section-inner">
-    <h2>About</h2>
+    <h2>Now</h2>
     <div class="about-content">
-      <p>CTO at Physical Superintelligence. Previously at NVIDIA, IBM Research, and the Department of Energy's national laboratories.</p>
+      <p>I am CTO at Physical Superintelligence, where I am building and leading the company's research and engineering organization across physics research, AI research, and engineering. I joined PSI early to build that organization and contributed to the company's $58M seed round, led by Breakthrough Energy Ventures.</p>
 
-      <p>At NVIDIA: led agentic GPU kernel development and optimization for frontier AI lab workloads, and drove performance evaluation strategy for CuTile, a next-generation GPU programming model.</p>
+      <p>PSI is a public benefit corporation building an AI-native physics lab. Human scientists direct research campaigns; virtual physicists carry them out, from hypothesis through simulation, verification, and engineering. A result counts as a discovery when independent verifications converge on it. The first proving ground is the physical infrastructure of AI: data centers and the factories that build them.</p>
 
-      <p>At IBM Research: led IBM's enterprise generative AI coding assistant from research to production — 8-person team within a 60+ person cross-functional effort across IBM and Red Hat. Earlier led HPC systems work on Summit and Sierra (world's #1 and #2 supercomputers at launch), supporting large-scale scientific simulation workloads at DOE national laboratories. Founded NYU Courant's first graduate course on high-performance ML during this period, still taught today.</p>
+      <p>The organization I lead has to do three things at once: produce physics results that survive verification, build the AI systems that produce them at scale, and ship engineering that customers can run. That is why physics, AI research, and engineering sit in one organization rather than three.</p>
+    </div>
+    <div class="now-links">
+      <a href="{{ .Site.Params.psi }}" target="_blank" rel="noopener" class="contact-btn primary">Physical Superintelligence</a>
+      <a href="{{ .Site.Params.psi_jobs }}" target="_blank" rel="noopener" class="contact-btn">Open roles</a>
+      <a href="mailto:{{ .Site.Params.psi_partnerships }}" class="contact-btn">Partnerships and media</a>
+    </div>
+  </div>
+</section>
 
-      <p>Before IBM: built distributed runtime systems at PNNL that spun off into Trovares (now RocketGraph).</p>
+<!-- ========== BEFORE PSI ========== -->
+<section id="about" class="section section-alt">
+  <div class="section-inner">
+    <h2>Before PSI</h2>
+    <div class="about-content">
+      <p>Before PSI I worked at NVIDIA, IBM Research, and the Department of Energy's national laboratories, on the systems side of AI.</p>
 
-      <p>Ph.D. in Computer Architecture, UPC Barcelona. IPDPS Best Paper Award (2012). 30+ publications, 15 patents.</p>
+      <p>At NVIDIA I led agentic GPU kernel development and optimization for frontier AI lab workloads and set the performance evaluation strategy for CuTile, NVIDIA's next-generation GPU programming model.</p>
+
+      <p>At IBM Research I led IBM's enterprise generative AI coding assistant from research to production: an 8-person team inside a 60+ person effort across IBM and Red Hat. Earlier I led the HPC systems team on Summit and Sierra, the two fastest supercomputers in the world at launch, supporting large-scale scientific simulation at DOE laboratories. During that period I created NYU Courant's first graduate course on high performance machine learning, still taught today.</p>
+
+      <p>At PNNL I built distributed runtime systems that spun off into Trovares, now RocketGraph.</p>
+
+      <p>PhD in Computer Architecture, UPC Barcelona. IPDPS Best Paper Award (2012). 30+ publications, 15 patents.</p>
     </div>
   </div>
 </section>
 
 <!-- ========== EDUCATION ========== -->
-<section id="education" class="section section-alt">
+<section id="education" class="section">
   <div class="section-inner">
     <h2>Education</h2>
     <ul class="education-list">
@@ -71,10 +90,23 @@
 </section>
 
 <!-- ========== FEATURED WORK (NEW) ========== -->
-<section id="experience" class="section">
+<section id="experience" class="section section-alt">
   <div class="section-inner">
     <h2>Featured Work</h2>
     <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-img">Physical Superintelligence</div>
+        <div class="project-body">
+          <h4>Research and engineering organization</h4>
+          <p>Physics research, AI research, and engineering under one technical mandate. Autonomous campaigns from hypothesis to verified, deployed systems.</p>
+          <div class="tags">
+            <span class="tag">Physics</span>
+            <span class="tag">AI Research</span>
+            <span class="tag">Systems</span>
+          </div>
+        </div>
+      </div>
 
       <div class="project-card">
         <div class="project-img">NVIDIA</div>
@@ -120,7 +152,7 @@
 </section>
 
 <!-- ========== AWARDS ========== -->
-<section id="awards" class="section section-alt">
+<section id="awards" class="section">
   <div class="section-inner">
     <h2>Awards</h2>
     <ul class="awards-list">
@@ -135,15 +167,16 @@
 </section>
 
 <!-- ========== IN THE PRESS ========== -->
-<section id="press" class="section">
+<section id="press" class="section section-alt">
   <div class="section-inner">
     <h2>In the Press</h2>
 
     <div class="press-category">
       <h3>Physical Superintelligence (2026)</h3>
-      <p class="press-blurb">Announcing Physical Superintelligence, a public benefit corporation pointing superintelligence at the hardest problems in physics — producing new physics, at scale, discovered and commercialized safely and verifiably for broad public benefit.</p>
+      <p class="press-blurb">Announcing Physical Superintelligence, a public benefit corporation pointing superintelligence at the hardest problems in physics: producing new physics, at scale, discovered and commercialized safely and verifiably for broad public benefit.</p>
       <ul>
-        <li><a href="https://theinnermostloop.substack.com/p/physical-superintelligence" target="_blank" rel="noopener">Physical Superintelligence</a> — Dr. Alex Wissner-Gross, The Innermost Loop</li>
+        <li><a href="https://psi.inc" target="_blank" rel="noopener">Physical Superintelligence: the AI-native physics lab</a></li>
+        <li><a href="https://theinnermostloop.substack.com/p/physical-superintelligence" target="_blank" rel="noopener">Physical Superintelligence</a>, Dr. Alex Wissner-Gross, The Innermost Loop</li>
       </ul>
     </div>
 
@@ -182,7 +215,7 @@
 </section>
 
 <!-- ========== SELECTED PAPERS ========== -->
-<section id="publications" class="section section-alt">
+<section id="publications" class="section">
   <div class="section-inner">
     <h2>Selected Papers</h2>
     <p class="pub-full-list">For a full list, see <a href="{{ .Site.Params.scholar }}" target="_blank" rel="noopener">Google Scholar</a>.</p>
@@ -242,7 +275,7 @@
 </section>
 
 <!-- ========== PRESENTATIONS ========== -->
-<section id="presentations" class="section">
+<section id="presentations" class="section section-alt">
   <div class="section-inner">
     <h2>Presentations &amp; Seminars</h2>
     <ul class="presentations-list">
@@ -254,9 +287,11 @@
 </section>
 
 <!-- ========== WRITING ========== -->
-<section id="writing" class="section section-alt">
+<section id="writing" class="section">
   <div class="section-inner">
     <h2>Writing</h2>
+
+    <h3 class="writing-subhead">Technical</h3>
     <div class="writing-grid">
       <a href="https://www.linkedin.com/pulse/converting-compute-breakthroughs-alessandro-morari-phd-buwmc/" target="_blank" rel="noopener" class="writing-card">
         <div class="writing-card-body">
@@ -290,6 +325,10 @@
           <span class="writing-link">Read on LinkedIn &rarr;</span>
         </div>
       </a>
+    </div>
+
+    <h3 class="writing-subhead">Essays</h3>
+    <div class="writing-grid">
       {{ range .Site.Data.substack.posts }}
         <a href="{{ .canonical_url }}" target="_blank" rel="noopener" class="writing-card">
           <div class="writing-card-body">
@@ -311,7 +350,9 @@
   <div class="section-inner">
     <div class="contact-content">
       <h2>Get in Touch</h2>
-      <p>Interested in collaborating on AI systems, GPU computing, or high-performance infrastructure? I'd love to hear from you.</p>
+      <p>Hiring: PSI is hiring physicists, AI researchers, and engineers in Boston and San Francisco. <a href="{{ .Site.Params.psi_jobs }}" target="_blank" rel="noopener">Open roles</a></p>
+      <p>Partnerships, media, investors: <a href="mailto:{{ .Site.Params.psi_partnerships }}">{{ .Site.Params.psi_partnerships }}</a></p>
+      <p>Me: <a href="{{ .Site.Params.linkedin }}" target="_blank" rel="noopener">LinkedIn</a></p>
       <div class="contact-links">
         <a href="{{ .Site.Params.linkedin }}" target="_blank" rel="noopener" class="contact-btn primary">
           <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
