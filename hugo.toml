@@ -27,11 +27,11 @@ title = "Alessandro Morari, PhD: CTO at Physical Superintelligence"
 
 [menu]
   [[menu.main]]
-    name = "Now"
+    name = "PSI"
     url = "#now"
     weight = 1
   [[menu.main]]
-    name = "Before PSI"
+    name = "Bio"
     url = "#about"
     weight = 2
   [[menu.main]]
